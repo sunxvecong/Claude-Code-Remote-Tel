@@ -1,5 +1,7 @@
 # Claude Code Remote Simple
 
+[English](./README.md) | [中文](./README_CN.md) | [日本語](./README_JA.md)
+
 A simplified fork of [Claude-Code-Remote](https://github.com/JessyTsui/Claude-Code-Remote) focused on **Telegram + tmux** workflow. Control Claude Code remotely from your phone — just send a message, get a clean reply. No tokens, no complex commands.
 
 ## What's Different from the Original
@@ -24,7 +26,7 @@ A simplified fork of [Claude-Code-Remote](https://github.com/JessyTsui/Claude-Co
 ### 1. Clone & Install
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/Claude-Code-Remote-Simple.git
+git clone https://github.com/sunxvecong/Claude-Code-Remote-Simple.git
 cd Claude-Code-Remote-Simple
 npm install
 ```
