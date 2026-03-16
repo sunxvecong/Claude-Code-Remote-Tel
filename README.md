@@ -26,8 +26,8 @@ A simplified fork of [Claude-Code-Remote](https://github.com/JessyTsui/Claude-Co
 ### 1. Clone & Install
 
 ```bash
-git clone https://github.com/sunxvecong/Claude-Code-Remote-Simple.git
-cd Claude-Code-Remote-Simple
+git clone https://github.com/sunxvecong/Claude-Code-Remote-Tel.git
+cd Claude-Code-Remote-Tel
 npm install
 ```
 
@@ -53,7 +53,7 @@ Edit `.env` and fill in:
 TELEGRAM_BOT_TOKEN=your-bot-token
 TELEGRAM_CHAT_ID=your-chat-id
 TELEGRAM_WHITELIST=your-chat-id
-SESSION_MAP_PATH=/full/path/to/Claude-Code-Remote-Simple/src/data/session-map.json
+SESSION_MAP_PATH=/full/path/to/Claude-Code-Remote-Tel/src/data/session-map.json
 ```
 
 ### 5. Configure ngrok
@@ -75,7 +75,7 @@ Add to `~/.claude/settings.json`:
         "hooks": [
           {
             "type": "command",
-            "command": "if [ -n \"$TMUX\" ]; then node /full/path/to/Claude-Code-Remote-Simple/claude-hook-notify.js completed; fi",
+            "command": "if [ -n \"$TMUX\" ]; then node /full/path/to/Claude-Code-Remote-Tel/claude-hook-notify.js completed; fi",
             "timeout": 5
           }
         ]
@@ -114,7 +114,7 @@ This one command will:
 
 ### Start everything
 ```bash
-cd ~/Claude-Code-Remote-Simple && ./start.sh
+cd ~/Claude-Code-Remote-Tel && ./start.sh
 ```
 
 ### View Claude conversation
@@ -130,7 +130,7 @@ Just type your message to the bot. That's it.
 ```
 You: analyze this code for bugs
 
-Bot: ✅ Claude-Code-Remote-Simple
+Bot: ✅ Claude-Code-Remote-Tel
      I've analyzed the code and found 3 potential issues...
 ```
 

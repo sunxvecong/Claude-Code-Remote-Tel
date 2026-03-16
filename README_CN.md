@@ -26,8 +26,8 @@
 ### 1. 克隆并安装
 
 ```bash
-git clone https://github.com/sunxvecong/Claude-Code-Remote-Simple.git
-cd Claude-Code-Remote-Simple
+git clone https://github.com/sunxvecong/Claude-Code-Remote-Tel.git
+cd Claude-Code-Remote-Tel
 npm install
 ```
 
@@ -53,7 +53,7 @@ cp .env.example .env
 TELEGRAM_BOT_TOKEN=你的bot-token
 TELEGRAM_CHAT_ID=你的chat-id
 TELEGRAM_WHITELIST=你的chat-id
-SESSION_MAP_PATH=/完整路径/Claude-Code-Remote-Simple/src/data/session-map.json
+SESSION_MAP_PATH=/完整路径/Claude-Code-Remote-Tel/src/data/session-map.json
 ```
 
 ### 5. 配置 ngrok
@@ -75,7 +75,7 @@ ngrok config add-authtoken 你的NGROK_AUTHTOKEN
         "hooks": [
           {
             "type": "command",
-            "command": "if [ -n \"$TMUX\" ]; then node /完整路径/Claude-Code-Remote-Simple/claude-hook-notify.js completed; fi",
+            "command": "if [ -n \"$TMUX\" ]; then node /完整路径/Claude-Code-Remote-Tel/claude-hook-notify.js completed; fi",
             "timeout": 5
           }
         ]
@@ -114,7 +114,7 @@ sudo ln -sf /opt/homebrew/bin/terminal-notifier /usr/local/bin/terminal-notifier
 
 ### 启动所有服务
 ```bash
-cd ~/Claude-Code-Remote-Simple && ./start.sh
+cd ~/Claude-Code-Remote-Tel && ./start.sh
 ```
 
 ### 查看 Claude 对话
@@ -130,7 +130,7 @@ tmux attach -t claude-tel
 ```
 你: 分析这段代码有没有 bug
 
-Bot: ✅ Claude-Code-Remote-Simple
+Bot: ✅ Claude-Code-Remote-Tel
      我分析了代码，发现了 3 个潜在问题...
 ```
 
